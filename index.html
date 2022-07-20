@@ -55,50 +55,40 @@
     ::selection {
       background: #ffe44c
     }
-  </style>
-  <script type="text/javascript">
-    function shuffle(array) {
-      for (var currentIndex = array.length - 1; currentIndex > 0; currentIndex--) {
-        var randomIndex = Math.floor(Math.random() * currentIndex);
-        var tmp = array[currentIndex];
-        array[currentIndex] = array[randomIndex];
-        array[randomIndex] = tmp;
-      }
-      return array;
-    }
 
-    document.addEventListener("DOMContentLoaded", function (event) {
-      var thelist = document.getElementById("list");
-      var newChildren = shuffle(Array.from(thelist.children));
-      for (var i = 0; i < newChildren.length; i++) { thelist.removeChild(newChildren[i]); }
-      for (var i = 0; i < newChildren.length; i++) { thelist.appendChild(newChildren[i]); }
-    });
-  </script>
+    .rainbow-text {
+        background-image: linear-gradient(to left, coral, blue, seagreen, orangered, maroon);   -webkit-background-clip: text;
+        color: transparent;
+    }
+  </style>
 </head>
 
 <body>
   <h1>Casper Rogild Storm</h1>
-  <p>I am Software Engineer who loves to solve complex technical problems. I have worked on many open-source projects,
-    usually with other contributors. In no particular order of preference:</p>
+  <p>
+  Hello 👋 I am a Software Engineer who likes to do <span class="rainbow-text">awesome</span> stuff. 
+  I have worked on numerous projects, many of which you can find on <a href="https://github.com/casperstorm">github.com/casperstorm</a>.
+  </p>
+  <p>
   </br>
-  <ul id="list">
-    <li>A Tarsnap GUI client for macOS written in Objective-C; <a href="https://github.com/casperstorm/Bob">Bob</a>.
-    </li>
-    <li>A World of Warcraft addon manager written in Rust; <a href="https://github.com/ajour/ajour">ajour</a>.</li>
-    <li>Optimized <a href="https://github.com/casperstorm/csgo-config">configuration file</a> for CS:GO.</li>
-    <li>A project for creating multiple pseudonyms. Written in Swift and Node; <a
-        href="https://github.com/casperstorm/mojn-ios">Mojn</a>.</li>
-    <li>A cryptocurrency news aggregator written in React-Native; <a
-        href="https://github.com/casperstorm/shine">Shine</a>.</li>
-    <li>A Vim theme with barely any colors; <a href="https://github.com/casperstorm/sort-hvid.vim">Sort/Hvid</a>.</li>
-    <li>A few World of Warcraft addons in Lua; <a href="https://github.com/casperstorm/hammer">Hammer</a> & <a
-        href="https://github.com/casperstorm/overshields">Overshields</a>.</li>
-    <li>A VSCode extension to display sibling files imitating fzf(%:h). Written in TypeScript; <a
-        href="https://github.com/casperstorm/directory-files">Directory Files</a>.</li>
-  </ul>
-  <p>...as well as other
-    <a href="https://github.com/casperstorm">open-source projects</a>.
+  Here is a list of topics i find particularly nice:
   </p>
   </br>
-  <p>Business enquiries at <a href="https://asynkron.xyz/">Asynkron</a> or view my <a href="./cv.pdf">CV</a>.
+  <ul>
+      <li><abbr>Rust<abbr></li>
+      <li><abbr>Bitcoin</abbr></li>
+      <li><abbr>Running</abbr></li>
+      <li><abbr>Open-source</abbr></li>
+      <li><abbr>Nintendo</abbr></li>
+      <li><abbr>Vim<abbr></li>
+  </ul>
+  </br>
+  <p>
+  Feel free to read my <a href="./cv.pdf">CV</a> as well if you would like to know more.
+  </p>
+  <p>
+  And if you need help, I freelance over at my company <a href="https://asynkron.xyz/">asynkron.xyz</a>.
+  </p>
+  </br>
+  </br>
 </body>
